@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Laptop logo -->
+        <div class="logo laptop-logo">
+          <img src="logo-light.svg" alt="Kanban Logo" />
+        </div>
+
+        <h4 class="boards-title">ALL BOARDS (1)</h4>
+        <button class="board-btn active">Launch Career</button>
+      </aside>
+
+      <!-- Main Content -->
+      <section class="content">
+        <!-- Header -->
+        <header class="header">
+          <div class="board-title">
+            <img class="board-favicon" src="favicon.svg" alt="logo" />
+            <h2>Launch Career</h2>
+          </div>
+        </header>
+        <!-- Board -->
+        <main class="board">
+          <!-- TODO -->
+          <div class="column">
+            <div class="column-title">
+              <span class="dot todo"></span>
+              TODO (4)
+            </div>
+            <div class="card">Launch Epic Career 🚀</div>
+            <div class="card">Conquer React ⚛️</div>
+            <div class="card">Understand Databases ⚙️</div>
+            <div class="card">Crush Frameworks 🧩</div>
+          </div>
+
+          <!-- DOING -->
+          <div class="column">
+            <div class="column-title">
+              <span class="dot doing"></span>
+              DOING (3)
+            </div>
+            <div class="card">Master JavaScript 💛</div>
+            <div class="card">Never Give Up 🏆</div>
+          </div>
+
+          <!-- DONE -->
+          <div class="column">
+            <div class="column-title">
+              <span class="dot done"></span>
+              DONE (3)
+            </div>
+            <div class="card">Explore ES6 Features 🚀</div>
+            <div class="card">Have fun 🥳</div>
+          </div>
+        </main>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
