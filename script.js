@@ -22,4 +22,22 @@ const taskBoard = [
     status: "done"
   }
 ];
+// ==========================================
+// Function: validateTaskStatus
+// ==========================================
 
+function validateTaskStatus() {
+  let statusInput = prompt("Enter task status (todo, doing, done):").toLowerCase();
+
+  // Keep asking until valid input is entered
+  while (
+    statusInput !== "todo" &&
+    statusInput !== "doing" &&
+    statusInput !== "done"
+  ) {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    statusInput = prompt("Enter task status (todo, doing, done):").toLowerCase();
+  }
+
+  return statusInput;
+}
