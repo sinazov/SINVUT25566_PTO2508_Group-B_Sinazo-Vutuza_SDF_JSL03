@@ -41,3 +41,26 @@ function validateTaskStatus() {
 
   return statusInput;
 }
+// ==========================================
+// Function: addNewTask
+// ==========================================
+
+function addNewTask() {
+
+  // Generate unique incremental ID
+  const lastTask = taskBoard[taskBoard.length - 1];
+  const newTaskId = lastTask ? lastTask.id + 1 : 1;
+
+  const taskTitle = prompt("Enter task title:");
+  const taskDescription = prompt("Enter task description:");
+  const taskStatus = validateTaskStatus();
+
+  const newTask = {
+    id: newTaskId,
+    title: taskTitle,
+    description: taskDescription,
+    status: taskStatus
+  };
+
+  taskBoard.push(newTask);
+}
