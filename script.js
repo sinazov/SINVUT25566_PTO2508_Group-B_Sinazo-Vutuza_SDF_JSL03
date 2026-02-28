@@ -64,3 +64,16 @@ function addNewTask() {
 
   taskBoard.push(newTask);
 }
+// Allow User to Add Up To 3 New Tasks
+// ==========================================
+
+const MAX_NEW_TASKS = 3;
+let tasksAddedCount = 0;
+
+while (tasksAddedCount < MAX_NEW_TASKS) {
+  addNewTask();
+  tasksAddedCount++;
+}
+
+// Alert user when limit is reached
+alert("There are enough tasks on your board, please check them in the console");
